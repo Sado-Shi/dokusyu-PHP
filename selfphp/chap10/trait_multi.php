@@ -20,7 +20,8 @@ trait PrinterTrait {
 }
 
 class FaxPrinter implements IFax, IPrinter {
-  use FaxTrait, PrinterTrait;
+  use FaxTrait,
+        PrinterTrait;
 }
 
 $fp = new FaxPrinter();

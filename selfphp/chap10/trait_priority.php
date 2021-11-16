@@ -1,22 +1,20 @@
-<?php 
-class MyParent {
-  public function hoge() {
-    print 'MyParent!!';
-  }
-}
+<?php
 
 trait MyTrait {
   public function hoge() {
     print 'MyTrait!!';
   }
 }
+class MyParent {
+  public function hoge() {
+    print 'MyParent!!';
+  }
+}
 
 class MyChild extends MyParent {
   use MyTrait;
-  
-  public function hoge() {
-    print 'MyChild!!';
-  }
+
+
 }
 
 $cls = new MyChild();

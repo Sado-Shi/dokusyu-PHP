@@ -1,6 +1,9 @@
-<?php 
+<?php
+
+ini_set("error_reporting", E_ALL);
+
 trait AccessorTrait {
-  public function __set($name, $value) { 
+  public function __set($name, $value) {
     if ($this->props[$name]) {
       $this->props[$name] = $value;
     } else {
@@ -19,12 +22,12 @@ trait AccessorTrait {
 
 class MyTriangle {
   use AccessorTrait;
-  
+
   private $props = [
     'base' => 1,
-    'height' => 1
+    'height' => 1,
   ];
-  
+
   public function getArea(): float {
     return $this->base * $this->height / 2;
   }
@@ -34,5 +37,3 @@ $cls = new MyTriangle();
 $cls->base = 10;
 $cls->height = 5;
 print $cls->getArea();
-
-//$cls->hoge = 'foo';

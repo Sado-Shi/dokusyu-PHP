@@ -13,3 +13,5 @@ $fx = new Fax();
 $fx->run();
 print '<br />';
 $fx->send();
+print '<br />';
+$fx->go();
