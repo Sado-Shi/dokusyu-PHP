@@ -1,4 +1,5 @@
-<?php 
+<?php
+ini_set("error_reporting", E_ALL);
 trait MyTrait1 {
   public function hoge() {
     print 'MyTrait1';
@@ -11,11 +12,11 @@ trait MyTrait2 {
   }
 }
 
-/*
-class MyClass {
-  use MyTrait1, MyTrait2;
-}
-*/
+
+// class MyClass {
+//   use MyTrait1, MyTrait2;
+// }
+
 
 class MyClass {
   use MyTrait1, MyTrait2 {

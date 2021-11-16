@@ -7,7 +7,7 @@ class MyUtil {
     if (!preg_match('|http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?|', $url)) {
       throw new UrlSyntaxException('不正なURLの形式です。');
     }
-    $data = @file_get_contents($url);
+    $data = file_get_contents($url);
     if (!$data) {
       throw new UrlRequestException('指定されたURLが見つかりません。');
     }
