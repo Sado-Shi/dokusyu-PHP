@@ -16,10 +16,10 @@ class Person {
     return $this->lastName.$this->firstName;
   }
 
-  public function __debugInfo() {
-    return [
-        '名' => $this->firstName,
-        '性' => $this->lastName
-    ];      
-  }
+  // public function __debugInfo() {
+  //   return [
+  //       '名' => $this->firstName,
+  //       '性' => $this->lastName
+  //   ];
+
 }

@@ -4,6 +4,7 @@ require_once './wings/selfphp/chap10/sub/MyClass.php';
 
 use wings\selfphp\chap10\MyClass;
 use wings\selfphp\chap10\sub\MyClass as SubClass;
+ini_set("error_reporting", E_ALL);
 
 print MyClass::showClass();
 print '<br />';
