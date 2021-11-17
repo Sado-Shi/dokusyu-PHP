@@ -15,3 +15,4 @@ use wings\selfphp\chap10\{
 print MyClass2::showClass();
 print '<br />';
 print MyClass3::showClass();
+// test
